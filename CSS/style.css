@@ -63,7 +63,7 @@ nav{
 
 /* для адаптивности*/
 @media  screen and (max-width: 768px){
-	.topnav a:not(:first-child){
+	.topnav a:not(:last-child){
 		display: none;
 	}
 
@@ -100,7 +100,7 @@ nav{
 
 }
 
-@media  screen and (max-width: : 420px){
+@media  screen and (max-width:  420px){
 	
 	.advantages{
 		flex-direction: column;
@@ -134,10 +134,7 @@ nav{
 	justify-content: center;
 }
 
-
-.advantages_items{
-	width: 30%;
-}
+. 
 
 .main_picture_div{
 	display: flex;
