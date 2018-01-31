@@ -58,63 +58,9 @@
 	<!--=============================================================____MAIN____============================================ -->
 	<!-- основное тело -->
 	<main>
-		
-		<div class="main_picture_div">
-		<img src="img/head.jpg" alt="" class="main_picture">
-		</div>
-
-		<div class="advantages_container">
-			<div class="advantages">				
-				<div class="advantages_items">
-					
-					<img src="img/icon/1.png">
-					<h2>Lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint ipsa ullam praesentium commodi voluptate!</p>
-					
-				</div>
-
-				<div class="advantages_items">
-					
-					<img src="img/icon/image.png">
-					<h2>Lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint ipsa ullam praesentium commodi voluptate!</p>
-
-				</div>
-
-				<div class="advantages_items">
-					
-					<img src="img/icon/image (1).png">
-					<h2>Lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint ipsa ullam praesentium commodi voluptate!</p>
-
-				</div>
-
-				<div class="advantages_items">
-					
-					<img src="img/icon/image (4).png">
-					<h2>Lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint ipsa ullam praesentium commodi voluptate!</p>
-				
-				</div>
-
-				<div class="advantages_items">
-					
-					<img src="img/icon/image (3).png">
-					<h2>Lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint ipsa ullam praesentium commodi voluptate!</p>
-
-				</div>
-
-				<div class="advantages_items">
-					
-					<img src="img/icon/image (6).png">
-					<h2>Lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint ipsa ullam praesentium commodi voluptate!</p>
-
-				</div>
-
-			</div>
-
+		<h1>Location</h1>
+		<div id="map">
+			
 		</div>
 
 	</main>
@@ -144,9 +90,23 @@
 
 	</footer>
 
-
-
 	
+ <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUicYXzXdOR2iuXANazrQGJBuL2QmtsJA&callback=initMap">
+    </script>
 	
 	<!-- загружаем скрипты-->
 	<script src="C:\Users\a_terzjan\Desktop\mySite\JS\script.js"></script>
